@@ -28,10 +28,20 @@ body {
   flex-shrink: 0;
   max-width: 400px;
   margin: 0 20px;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
 }
 .slide-wrapper .slide li img {
   width: 100%;
   object-fit: cover;
+}
+.slide-wrapper .slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.slide-wrapper .slide:hover {
+  will-change: transform;
 }
 
 /*# sourceMappingURL=style.css.map */

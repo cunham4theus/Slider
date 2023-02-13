@@ -24,20 +24,31 @@ body {
   overflow: hidden;
 
   .slide {
-    display: flex;
-    
+    display: flex;    
 
     li {
       width: 80vw;
       flex-shrink: 0;
       max-width: 400px;
       margin: 0 20px;
+      opacity: .8;
+      transform: scale(.8);
+      transition: .4s;
 
       img {
         width: 100%;
         object-fit: cover;
       }
     }
-  } 
+
+    li.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &:hover {
+      will-change: transform;
+    }
+  }   
 }
 
