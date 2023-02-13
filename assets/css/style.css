@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #181818;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+}
+.slide-wrapper .slide {
+  display: flex;
+}
+.slide-wrapper .slide li {
+  width: 80vw;
+  flex-shrink: 0;
+  max-width: 400px;
+  margin: 0 20px;
+}
+.slide-wrapper .slide li img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

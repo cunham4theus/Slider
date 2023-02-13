@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+}
+
+img {
+  display: block;
+  max-width: 100%; 
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #181818;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+
+  .slide {
+    display: flex;
+    
+
+    li {
+      width: 80vw;
+      flex-shrink: 0;
+      max-width: 400px;
+      margin: 0 20px;
+     
+
+      img {        
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
